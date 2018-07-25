@@ -1,0 +1,5 @@
+This code is aimed at solving a Markovian master equation [see Eq. 1 in T. Maier et al, OPTICS EXPRESS 22, 11 (2014) ] for the case of superradiance of a few strontion atoms which are placed in neighbouring sites of a one-dimensional lattice. A density matrix method is employed and propagations are performed by means of Runge-Kutta method. 
+
+The code consists of five parts: (i) mimitian_radsup.c - contains parameters, initial conditions, and allocation memories; (ii) carana_radsup.c - contains function generator and integration of first order differential equations; (iii) inti_radsup.c - the main program to call all the functions; (iv) sirah_radsup.h - the header of the program; (v) mt19937ar.c - a library pseudo random number of mersenne twister (you may ignore this one as this will be needed for the trajectory one).
+
+Type 'make' to compile the code and one needs gsl library that can be downloaded here https://www.gnu.org/software/gsl/. Do not hesitate to aske me should there any question.
